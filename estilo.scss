@@ -1,4 +1,4 @@
-/*Declaração de variaveis*/
+//Declaração de variaveis
 
 $cor1: rgb(182, 29, 29);
 $cor2: rgb(113, 113, 243);
@@ -13,7 +13,7 @@ $px5: 40px;
 $largura: 100vw;
 $altura: 25vh;
 
-/*Aninhamento do SASS*/
+//Aninhamento do SASS
 
 header {
     background-color: $cor1;
@@ -34,8 +34,27 @@ main {
     width: $largura;
     height: $altura;
 }
-footer {
-    background-color: $cor3;
-    width: $largura;
-    height: $altura;
+
+//modularisação do Sass, onde pego um arquivo externo para colocar no principal
+@import 'modulo_footer';
+
+//mixin, bloco de instrução
+
+@mixin bloco($cor: yellow, $contorno: 25px){ //parametros dentro do meu mixin chamado bloco
+    width: 200px;
+    height: 200px;
+    background-color: $cor;
+    border-radius: $contorno;
+    margin: 10px;
+}
+
+//inclusao do mixin 
+.div1 {
+    @include bloco();
+}
+.div2 {
+    @include bloco($cor: orange);
+}
+.div3 {
+    @include bloco($cor: rgb(19, 139, 19), $contorno: 100px);
 }
