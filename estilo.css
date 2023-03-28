@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/*Declaração de variaveis*/
+/*Aninhamento do SASS*/
+header {
+  background-color: rgb(182, 29, 29);
+  width: 100vw;
+  height: 25vh;
+}
+header h1 {
+  color: rgb(255, 255, 255);
+}
+header h1:hover {
+  font-size: 40px;
+}
+header p {
+  color: rgb(255, 255, 255);
+}
+
+main {
+  background-color: rgb(113, 113, 243);
+  width: 100vw;
+  height: 25vh;
+}
+
+footer {
+  background-color: rgb(20, 98, 20);
+  width: 100vw;
+  height: 25vh;
+}/*# sourceMappingURL=estilo.css.map */
