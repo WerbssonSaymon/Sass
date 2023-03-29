@@ -9,9 +9,6 @@ header h1 {
 header h1:hover {
   font-size: 40px;
 }
-header p {
-  color: rgb(255, 255, 255);
-}
 
 main {
   background-color: rgb(113, 113, 243);
@@ -49,4 +46,15 @@ footer {
   background-color: rgb(19, 139, 19);
   border-radius: 100px;
   margin: 10px;
+}
+
+.texto, .texto--linha2, .texto--linha1 {
+  margin-left: 15px;
+  font-size: 20px;
+}
+.texto--linha1 {
+  color: blueviolet;
+}
+.texto--linha2 {
+  color: deepskyblue;
 }/*# sourceMappingURL=estilo.css.map */

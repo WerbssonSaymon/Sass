@@ -25,9 +25,6 @@ header {
             font-size: $px5;
         }
     }
-    p {
-        color: $cor5;  
-      }
 }
 main {
     background-color: $cor2;
@@ -57,4 +54,19 @@ main {
 }
 .div3 {
     @include bloco($cor: rgb(19, 139, 19), $contorno: 100px);
+}
+
+//conceito de herança no sass com @extend 
+
+.texto {
+    margin-left: 15px;
+    font-size: 20px;
+    &--linha1 {
+        @extend .texto;
+        color: blueviolet;
+    }
+    &--linha2 {
+        @extend .texto;
+        color: deepskyblue;
+    }
 }
